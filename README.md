@@ -4,7 +4,7 @@
 
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/200px-Node.js_logo.svg.png)
 
-[![NPM Version][npm-image]][npm-url] ![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)
+![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)
 
 This app showcases an Image Processing API powered by Typescript, Node.js and Express which can serve properly scaled versions of your images to the front end to reduce page load size.
 

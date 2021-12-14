@@ -1,7 +1,7 @@
 {
-  "name": "image-processing-api-ultimate2",
+  "name": "image-processing-api",
   "version": "1.0.0",
-  "description": "",
+  "description": "This project showcases an image processing api.",
   "main": "index.js",
   "scripts": {
     "build": "rimraf dist && tsc",
@@ -17,8 +17,6 @@
     "lint-and-fix": "eslint . --ext .ts --fix",
     "format": "prettier --config .prettierrc \"src/**/*.ts\" --write"
   },
-  "author": "",
-  "license": "MIT",
   "dependencies": {
     "@types/body-parser": "^1.19.2",
     "@types/express": "^4.17.13",
@@ -48,5 +46,16 @@
     "eslint-plugin-prettier": "^4.0.0",
     "nodemon": "^2.0.15",
     "prettier": "^2.5.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thepembeweb/image-processing-api.git"
+  },
+  "keywords": [],
+  "author": "Pemberai Sweto",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/thepembeweb/image-processing-api/issues"
+  },
+  "homepage": "https://github.com/thepembeweb/image-processing-api#readme"
 }

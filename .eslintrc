@@ -10,8 +10,13 @@
   ],
   "rules": {
     "no-console": 0, // Means warning
-    "prettier/prettier": 2, // Means error
     "@typescript-eslint/no-var-requires": 0,
-    "@typescript-eslint/no-explicit-any": 0
+    "@typescript-eslint/no-explicit-any": 0,
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto"
+      }
+    ]
   }
 }

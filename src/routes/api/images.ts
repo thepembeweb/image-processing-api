@@ -42,7 +42,11 @@ images.get('/images', async (req: Request, res: Response) => {
       return;
     }
 
-    const outputFilename = getResizedFileName(inputFilename);
+    const outputFilename = getResizedFileName(
+      inputFilename,
+      inputWidth,
+      inputHeight
+    );
 
     if (isValidFileName(outputFilename, ImageCategory.Thumb)) {
       return res

@@ -60,11 +60,15 @@ export const isResized = async (
   }
 };
 
-export const getResizedFileName = (fileName: string): string => {
+export const getResizedFileName = (
+  fileName: string,
+  width: number,
+  height: number
+): string => {
   let fileNameResize: string | string[] = fileName.split('.');
   fileNameResize = fileNameResize.map((el, idx) => {
     if (idx === fileNameResize.length - 2) {
-      return `${el}_thumb.`;
+      return `${el}_thumb_${width}x${height}.`;
     }
     return el;
   });

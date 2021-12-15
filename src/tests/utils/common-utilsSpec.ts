@@ -120,11 +120,13 @@ describe('Tests for common-utils', () => {
   });
 
   describe('function getResizedFileName returns the resized file name based on the input value', () => {
-    it(`should receive input of 'duck.jpg' and be 'duck_thumb.jpg'`, () => {
-      const mockValue = 'duck.jpg';
-      const mockExpectedResult = 'duck_thumb.jpg';
+    it(`should receive input of 'duck.jpg',100,200 and be 'duck_thumb_100x200.jpg'`, () => {
+      const mockFilename = 'duck.jpg';
+      const mockWidth = 100;
+      const mockHeight = 200;
+      const mockExpectedResult = 'duck_thumb_100x200.jpg';
 
-      const result = getResizedFileName(mockValue);
+      const result = getResizedFileName(mockFilename, mockWidth, mockHeight);
       const expected = mockExpectedResult;
       expect(result).toEqual(expected);
     });
